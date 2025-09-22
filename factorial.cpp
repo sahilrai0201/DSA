@@ -8,9 +8,9 @@ int factorial(int n){
         return 1;
     }
 
-    int chhoti = factorial(n-1);
-    int badi = n * chhoti;
-    return badi;
+    int smallerProblem = factorial(n-1);
+    int biggerProblem = n * smallerProblem;
+    return biggerProblem;
 }
 
 int main(){
