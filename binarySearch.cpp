@@ -1,9 +1,11 @@
-#include <iostream>
+//this is my first change
+
+#include <iostream>               
 using namespace std;
 
 bool binarySearch (int arr[], int start, int end, int key) {
     
-    //base cases
+    //base case
     if (start > end) {
         return false;
     }
@@ -13,7 +15,7 @@ bool binarySearch (int arr[], int start, int end, int key) {
         return true;
     }
 
-    //recursive call
+    //recursive case
     if (arr[mid] < key) {
         return binarySearch (arr, mid + 1, end, key);
     } 
